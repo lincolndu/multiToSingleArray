@@ -26,6 +26,14 @@ $array=$obj->result;
 print_r($array);
 
 
+Multi dimensional array to single array with one line code !!!
+
+$array=[1=>[2,5=>[4,2],[7,8=>[3,6]],5],4];
+$arr=[];
+array_walk_recursive($array, function($k){global $arr; $arr[]=$k;});
+print_r($arr);
+
+
 
 
 ?>
